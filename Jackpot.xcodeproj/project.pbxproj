@@ -13,6 +13,8 @@
 		5B0B84E61D47BC52002BA493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B84E41D47BC52002BA493 /* Main.storyboard */; };
 		5B0B84E81D47BC52002BA493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B84E71D47BC52002BA493 /* Assets.xcassets */; };
 		5B0B84EB1D47BC52002BA493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B84E91D47BC52002BA493 /* LaunchScreen.storyboard */; };
+		5B0B84F41D47D1DF002BA493 /* TicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */; };
+		5B0B84F71D47D262002BA493 /* LotteryTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B84F61D47D262002BA493 /* LotteryTicket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		5B0B84E71D47BC52002BA493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B0B84EA1D47BC52002BA493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B0B84EC1D47BC52002BA493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0B84F21D47D1DF002BA493 /* TicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketTableViewController.h; path = ../TicketTableViewController.h; sourceTree = "<group>"; };
+		5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketTableViewController.m; path = ../TicketTableViewController.m; sourceTree = "<group>"; };
+		5B0B84F51D47D262002BA493 /* LotteryTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryTicket.h; sourceTree = "<group>"; };
+		5B0B84F61D47D262002BA493 /* LotteryTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryTicket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 			children = (
 				5B0B84DE1D47BC52002BA493 /* AppDelegate.h */,
 				5B0B84DF1D47BC52002BA493 /* AppDelegate.m */,
+				5B0B84F51D47D262002BA493 /* LotteryTicket.h */,
+				5B0B84F61D47D262002BA493 /* LotteryTicket.m */,
+				5B0B84F21D47D1DF002BA493 /* TicketTableViewController.h */,
+				5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */,
 				5B0B84E11D47BC52002BA493 /* WinningTicketViewController.h */,
 				5B0B84E21D47BC52002BA493 /* WinningTicketViewController.m */,
 				5B0B84E41D47BC52002BA493 /* Main.storyboard */,
@@ -149,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0B84F71D47D262002BA493 /* LotteryTicket.m in Sources */,
 				5B0B84E31D47BC52002BA493 /* WinningTicketViewController.m in Sources */,
+				5B0B84F41D47D1DF002BA493 /* TicketTableViewController.m in Sources */,
 				5B0B84E01D47BC52002BA493 /* AppDelegate.m in Sources */,
 				5B0B84DD1D47BC52002BA493 /* main.m in Sources */,
 			);
