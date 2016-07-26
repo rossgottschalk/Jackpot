@@ -9,6 +9,8 @@
 #import "TicketTableViewController.h"
 
 @interface TicketTableViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *winningTicketButton;
 
 @end
 

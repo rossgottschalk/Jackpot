@@ -10,6 +10,19 @@
 
 @interface WinningTicketViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView1;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView2;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView3;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView4;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView5;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView6;
+
+
 @end
 
 @implementation WinningTicketViewController

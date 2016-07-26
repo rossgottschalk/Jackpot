@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Ticket Table View Controller-->
         <scene sceneID="ydM-0L-JJe">
             <objects>
-                <tableViewController id="MeS-A5-J99" sceneMemberID="viewController">
+                <tableViewController id="MeS-A5-J99" customClass="TicketTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1AI-pT-zGN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,8 +30,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="QyF-Oc-qhY">
                         <barButtonItem key="leftBarButtonItem" title="+" id="Xlo-JE-vqg"/>
-                        <barButtonItem key="rightBarButtonItem" title="Winning Tickets &gt;" id="hTY-rT-E3E"/>
+                        <barButtonItem key="rightBarButtonItem" title="Winning Ticket &gt;" id="hTY-rT-E3E"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="Xlo-JE-vqg" id="G9L-Wd-aoa"/>
+                        <outlet property="winningTicketButton" destination="hTY-rT-E3E" id="JZo-fP-nAZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1O-ue-AUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,9 +57,9 @@
                                 <rect key="frame" x="276" y="510" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-4r-Txe">
-                                <rect key="frame" x="20" y="20" width="81" height="30"/>
-                                <state key="normal" title="Add Tickets"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-4r-Txe">
+                                <rect key="frame" x="37" y="20" width="48" height="30"/>
+                                <state key="normal" title="&lt; Back"/>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTu-wQ-yN9">
                                 <rect key="frame" x="213" y="192" width="77" height="216"/>
@@ -107,6 +111,16 @@
                             <constraint firstItem="pgK-zi-3KX" firstAttribute="leading" secondItem="2CF-y7-l0P" secondAttribute="trailing" constant="20" id="x1j-ED-fzD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="KbO-4r-Txe" id="1GI-nX-p4c"/>
+                        <outlet property="pickerView1" destination="g1R-fr-YS5" id="cDp-zy-iZt"/>
+                        <outlet property="pickerView2" destination="fyh-8b-2nv" id="YDS-6T-8gv"/>
+                        <outlet property="pickerView3" destination="cTu-wQ-yN9" id="XGi-xX-dXn"/>
+                        <outlet property="pickerView4" destination="QPt-2j-8dg" id="mfV-4Y-eWD"/>
+                        <outlet property="pickerView5" destination="2CF-y7-l0P" id="J6L-VK-8d6"/>
+                        <outlet property="pickerView6" destination="pgK-zi-3KX" id="7S7-Jz-IkS"/>
+                        <outlet property="submitButton" destination="BsH-WU-uif" id="JcS-ql-TTN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
