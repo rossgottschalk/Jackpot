@@ -8,18 +8,21 @@
 
 #import "TicketTableViewController.h"
 #import "WinningTicketViewController.h"
-#import "LotteryTicket.h"
 
 @interface TicketTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *winningTicketButton;
+@property (strong, nonatomic) NSMutableArray *addedTicket;
 
 @end
 
 @implementation TicketTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    self.addedTicket = [[NSMutableArray alloc] init];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -28,39 +31,48 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - Action Handlers
+- (IBAction)addNewTicketButton:(UIBarButtonItem *)sender
+{
+    [self.addedTicket addObject:@"Hi Tyler"];
+    [self.tableView reloadData];
+}
+    
+    
+
+
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-
-#pragma mark - Bar Button Actions
-- (IBAction)addButton:(id)sender
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    LotteryTick
+    return 1;
 }
-/*
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+   return  self.addedTicket.count;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"LottoTicket"forIndexPath:indexPath];
+    //configure the cell.....
+    cell.textLabel.text = self.addedTicket [indexPath.row];
     
     return cell;
+    
 }
-*/
 
+    // Configure the cell...
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
