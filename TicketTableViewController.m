@@ -8,11 +8,13 @@
 
 #import "TicketTableViewController.h"
 #import "WinningTicketViewController.h"
+#import "Ticket.h"
 
 @interface TicketTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *winningTicketButton;
-@property (strong, nonatomic) NSMutableArray *addedTicket;
+@property NSMutableArray *tickets;
+
 
 @end
 
@@ -21,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.addedTicket = [[NSMutableArray alloc] init];
+    self.tickets = [[NSMutableArray alloc] init];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -40,9 +42,12 @@
 
 
 #pragma mark - Action Handlers
+
+//create button to add a new ticket
 - (IBAction)addNewTicketButton:(UIBarButtonItem *)sender
 {
-    [self.addedTicket addObject:@"Hi Tyler"];
+    Ticket *aTicket = [Ticket ticketwithQuickPick];
+    [self.tickets addObject:aTicket];
     [self.tableView reloadData];
 }
     
@@ -59,14 +64,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   return  self.addedTicket.count;
+   return  self.tickets.count;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"LottoTicket"forIndexPath:indexPath];
     //configure the cell.....
-    cell.textLabel.text = self.addedTicket [indexPath.row];
+    Ticket *aTicket = self.tickets [indexPath.row];
+    cell.textLabel.text = [aTicket description];
     
     return cell;
     

@@ -14,6 +14,7 @@
 		5B0B84E81D47BC52002BA493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B84E71D47BC52002BA493 /* Assets.xcassets */; };
 		5B0B84EB1D47BC52002BA493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B84E91D47BC52002BA493 /* LaunchScreen.storyboard */; };
 		5B0B84F41D47D1DF002BA493 /* TicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */; };
+		5B5C07A91D4928E000F3843D /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C07A81D4928E000F3843D /* Ticket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5B0B84EC1D47BC52002BA493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0B84F21D47D1DF002BA493 /* TicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketTableViewController.h; path = ../TicketTableViewController.h; sourceTree = "<group>"; };
 		5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketTableViewController.m; path = ../TicketTableViewController.m; sourceTree = "<group>"; };
+		5B5C07A71D4928E000F3843D /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		5B5C07A81D4928E000F3843D /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				5B0B84DE1D47BC52002BA493 /* AppDelegate.h */,
 				5B0B84DF1D47BC52002BA493 /* AppDelegate.m */,
+				5B5C07A71D4928E000F3843D /* Ticket.h */,
+				5B5C07A81D4928E000F3843D /* Ticket.m */,
 				5B0B84F21D47D1DF002BA493 /* TicketTableViewController.h */,
 				5B0B84F31D47D1DF002BA493 /* TicketTableViewController.m */,
 				5B0B84E11D47BC52002BA493 /* WinningTicketViewController.h */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5C07A91D4928E000F3843D /* Ticket.m in Sources */,
 				5B0B84E31D47BC52002BA493 /* WinningTicketViewController.m in Sources */,
 				5B0B84F41D47D1DF002BA493 /* TicketTableViewController.m in Sources */,
 				5B0B84E01D47BC52002BA493 /* AppDelegate.m in Sources */,
