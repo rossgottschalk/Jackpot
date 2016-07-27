@@ -30,7 +30,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="QyF-Oc-qhY">
                         <barButtonItem key="leftBarButtonItem" title="+" id="Xlo-JE-vqg"/>
-                        <barButtonItem key="rightBarButtonItem" title="Winning Ticket &gt;" id="hTY-rT-E3E"/>
+                        <barButtonItem key="rightBarButtonItem" title="Winning Ticket &gt;" id="hTY-rT-E3E">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="98e-Te-1aG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="Xlo-JE-vqg" id="G9L-Wd-aoa"/>

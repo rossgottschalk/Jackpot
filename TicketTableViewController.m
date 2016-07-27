@@ -7,6 +7,8 @@
 //
 
 #import "TicketTableViewController.h"
+#import "WinningTicketViewController.h"
+#import "LotteryTicket.h"
 
 @interface TicketTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
@@ -43,6 +45,12 @@
     return 0;
 }
 
+
+#pragma mark - Bar Button Actions
+- (IBAction)addButton:(id)sender
+{
+    LotteryTick
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

@@ -10,4 +10,8 @@
 
 @interface LotteryTicket : NSObject
 
++ (instancetype)quickPickTicket;
++ (instancetype)ticketUsingArray:(NSArray *)quickPick;
+-(NSMutableArray *) quickPick;
+
 @end
