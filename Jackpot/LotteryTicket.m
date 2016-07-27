@@ -17,6 +17,8 @@
 
 @implementation LotteryTicket
 
+
+
 - (instancetype) init
 {
     self = [super init];
